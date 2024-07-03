@@ -1,0 +1,33 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.caption {
+  font-family: $fontMain;
+  font-weight: 700;
+}
+
+h1,
+.caption--h1 {
+  font-size: 32px;
+  line-height: 41px;
+}
+
+h2,
+.caption--h2 {
+  font-size: 24px;
+  line-height: 31px;
+}
+
+h3,
+.caption--h3 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.caption-h1--small {
+  font-size: 75px;
+  line-height: 80px;
+}

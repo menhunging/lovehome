@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
+    <title>Модальные окна</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../../img/favicon/safari-pinned-tab.svg" color="#030e2c">
+    <meta name="msapplication-TileColor" content="#030e2c">
+    <meta name="theme-color" content="#030e2c">
+
+    <link rel="stylesheet" type="text/css" href="../../fonts/stylesheet.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../libs/selectric/selectric.css" />
+    <link rel="stylesheet" type="text/css" href="../../libs/micromodal/micromodal.css" />
+    <link rel="stylesheet" type="text/css" href="../../libs/fancybox/fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="../../libs/aos/aos.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+</head>
+
+<body class="inner-page">
+    <div class="site-wrapper">
+        <header class="header">
+            <picture class="logo">
+                <a href="/pages/index/index.html"></a>
+                <svg width="29" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.967 9.85876C11.967 9.70282 12.0936 9.57641 12.2498 9.57641H13.947C14.1032 9.57641 14.2298 9.70282 14.2298 9.85876V11.5529C14.2298 11.7088 14.1032 11.8352 13.947 11.8352H12.2498C12.0936 11.8352 11.967 11.7088 11.967 11.5529V9.85876ZM12.5327 11.2705V10.1411H13.6641V11.2705H12.5327Z"
+                        fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M14.5127 9.85876C14.5127 9.70282 14.6393 9.57641 14.7955 9.57641H16.4927C16.6489 9.57641 16.7755 9.70282 16.7755 9.85876V11.5529C16.7755 11.7088 16.6489 11.8352 16.4927 11.8352H14.7955C14.6393 11.8352 14.5127 11.7088 14.5127 11.5529V9.85876ZM15.0784 11.2705V10.1411H16.2098V11.2705H15.0784Z"
+                        fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2498 12.1176C12.0936 12.1176 11.967 12.244 11.967 12.3999V14.0941C11.967 14.25 12.0936 14.3764 12.2498 14.3764H13.947C14.1032 14.3764 14.2298 14.25 14.2298 14.0941V12.3999C14.2298 12.244 14.1032 12.1176 13.947 12.1176H12.2498ZM12.5327 12.6823V13.8117H13.6641V12.6823H12.5327Z"
+                        fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M14.5127 12.3999C14.5127 12.244 14.6393 12.1176 14.7955 12.1176H16.4927C16.6489 12.1176 16.7755 12.244 16.7755 12.3999V14.0941C16.7755 14.25 16.6489 14.3764 16.4927 14.3764H14.7955C14.6393 14.3764 14.5127 14.25 14.5127 14.0941V12.3999ZM15.0784 13.8117V12.6823H16.2098V13.8117H15.0784Z"
+                        fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.60392 14.1493C-0.626893 11.2565 -0.886807 6.30588 2.02339 3.09181C4.93358 -0.122264 9.91185 -0.382698 13.1427 2.51011L14.2984 3.54495L15.302 2.64633C18.4938 -0.211493 23.4118 0.0457962 26.2868 3.22099C29.1618 6.39619 28.905 11.2869 25.7133 14.1447L14.1481 24.5L14.0799 24.4246L2.60392 14.1493ZM14.1561 22.5964L24.769 13.0938C27.3777 10.758 27.5874 6.76284 25.2376 4.16764C22.8849 1.56933 18.8582 1.35867 16.2464 3.69726L15.1972 4.63668C15.2643 4.6814 15.3285 4.73247 15.3889 4.78988L20.1043 9.27486C20.3844 9.54131 20.543 9.9107 20.543 10.297V15.568C20.543 16.3477 19.9098 16.9798 19.1287 16.9798H9.69784C8.91675 16.9798 8.28355 16.3477 8.28355 15.568V10.297C8.28355 9.9107 8.44209 9.54131 8.72223 9.27486L13.4377 4.78988C13.4594 4.76923 13.4816 4.74939 13.5043 4.73037L12.1983 3.56105C9.5474 1.18746 5.46046 1.40127 3.07261 4.03845C0.687568 6.67253 0.900461 10.7276 3.54826 13.0984L14.1561 22.5964ZM19.1287 10.297V15.568H9.69784L9.69784 10.297L14.4133 5.81198L19.1287 10.297Z"
+                        fill="black" />
+                </svg>
+            </picture>
+
+            <div class="lang">
+                <a href="#" class="active">Ru</a>
+                <a href="#">En</a>
+            </div>
+
+            <nav class="menu">
+                <div class="menu__inner">
+                    <button class="btn-close"></button>
+                    <ul>
+                        <li><a href="../portfolio/portfolio.html">Портфолио</a></li>
+                        <li>
+                            <a href="../studio/studio.html">Студия</a>
+                            <ul class="menu-sub">
+                                <li><a href="#">Публикации</a></li>
+                                <li><a href="#">Дизайн Интерьера</a></li>
+                                <li><a href="#">Цены</a></li>
+                                <li><a href="#">home staging</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Бренды</a></li>
+                        <li><a href="#" class="active">Наличие</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <div class="lang">
+                        <a href="#" class="active">Ru</a>
+                        <a href="#">En</a>
+                    </div>
+                </div>
+            </nav>
+
+            <button class="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+        </header>
+        <main class="main">
+            <div style="padding: 50px;">
+                <a href="#" data-modal="modal-call">Оставьте заявку</a>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="developer">
+                Разработка сайта - <a href="https://fouro.ru/" target="_blank">FOURO</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<div class="micromodal-slide modal" id="modal-call" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close></div>
+    <div class="modal__container" role="dialog" aria-modal="true">
+        <div class="modal__inner">
+
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z"
+                        fill="black" />
+                </svg>
+            </button>
+
+            <div class="modal__content" autocomplete="off">
+                <section class="questions-from">
+                    <h2 class="caption">Остались вопросы?</h2>
+                    <span class="questions-from__text">Наши менеджеры свяжутся с вами в ближайшее время</span>
+                    <form action="" class="questions-from__form">
+                        <div class="input-item">
+                            <input type="text" placeholder="Имя">
+                            <span class="error-text">Необходимо заполнить</span>
+                        </div>
+                        <div class="input-item error">
+                            <input type="text" placeholder="Телефон" class="phone-input" inputmode="text">
+                            <span class="error-text">Необходимо заполнить</span>
+                        </div>
+                        <div class="input-item">
+                            <input type="email" placeholder="E-mail">
+                            <span class="error-text">Необходимо заполнить</span>
+                        </div>
+                        <button class="btn btn--dark">Отправить заявку</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../libs/jquery/jquery-3.7.1.min.js"></script>
+<script src="../../libs/swiper/swiper-bundle.min.js"></script>
+<script src="../../libs/selectric/jquery.selectric.min.js"></script>
+<script src="../../libs/micromodal/micromodal.min.js"></script>
+<script src="../../libs/tabslet/jquery.tabslet.min.js"></script>
+<script src="../../libs/fancybox/fancybox.umd.js"></script>
+<script src="../../libs/inputmask/jquery.inputmask.min.js"></script>
+<script src="../../libs/aos/aos.js"></script>
+<script src="../../js/main.js"></script>
+
+</html>

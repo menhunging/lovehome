@@ -1,0 +1,27 @@
+.footer {
+  background-color: $colorYellow;
+  padding: 0 120px 60px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  display: flex;
+  width: 100%;
+}
+
+.developer {
+  margin-left: auto;
+  display: inline-block;
+  text-transform: uppercase;
+
+  a {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration 0.3s;
+
+    &:hover {
+      text-decoration-color: $colorBlack;
+    }
+  }
+}

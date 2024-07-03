@@ -1,0 +1,91 @@
+@media (max-width: 1439px) {
+  .header {
+    padding: 50px 80px;
+  }
+
+  .portfolio__content {
+    padding: 20px;
+  }
+
+  .footer {
+    padding: 0 80px 50px;
+  }
+
+  .project__content {
+    padding: 50px 80px;
+    gap: 30px;
+  }
+
+  .project {
+    padding-top: 50px;
+  }
+
+  .about__content {
+    padding: 50px 80px;
+    gap: 30px;
+  }
+
+  .studio-page {
+    padding: 50px 0;
+  }
+
+  .quote {
+    padding: 50px 80px;
+  }
+
+  .menu ul.menu-sub li::before {
+    top: 6px;
+  }
+
+  .menu ul.menu-sub::before {
+    top: 6px;
+  }
+
+  .design-item {
+    height: 500px;
+  }
+
+  .staging {
+    padding: 50px 80px;
+  }
+
+  .staging__media {
+    height: 350px;
+  }
+
+  .publications-slider {
+    padding: 50px 80px;
+  }
+
+  .brands__item .picture {
+    height: 50px;
+  }
+
+  .brands__link {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .brands {
+    padding: 50px 80px;
+  }
+
+  .brands__list {
+    gap: 40px 20px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .questions-from {
+    padding: 60px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .catalog-list {
+    gap: 30px;
+  }
+
+  .step-number {
+    transform: scale(0.8) translateY(-10px) translateX(-70px);
+  }
+}

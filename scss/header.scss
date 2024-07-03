@@ -1,0 +1,154 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 50px;
+  padding: 50px 120px;
+  transition: opacity 0.3s;
+  position: relative;
+  z-index: 5;
+  color: $colorWhite;
+
+  .logo {
+    width: 29px;
+    height: 24px;
+    transition: all 0.3s;
+  }
+}
+
+.lang {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  a {
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration 0.3s;
+    text-transform: uppercase;
+
+    @include before {
+      left: calc(100% + 10px);
+      top: 0;
+      height: 100%;
+      width: 1px;
+      background-color: $colorWhite;
+    }
+
+    &:last-child {
+      &::before {
+        display: none;
+      }
+    }
+
+    &:hover {
+      text-decoration-color: $colorWhite;
+    }
+
+    &.active {
+      text-decoration-color: $colorWhite;
+      font-weight: 400;
+    }
+  }
+}
+
+.menu {
+  width: 100%;
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+
+    &.menu-sub {
+      display: none;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+
+      @include before {
+        background-color: rgba(0, 0, 0, 0.4) !important;
+        top: 8px;
+        height: 1px;
+        width: 5px;
+        left: -13px;
+      }
+
+      li {
+        @include before {
+          transform: rotate(0);
+          background-color: rgba(0, 0, 0, 0.4);
+          top: 8px;
+          height: 1px;
+          width: 5px;
+          left: calc(100% + 7px);
+        }
+      }
+
+      a {
+        color: rgba(0, 0, 0, 0.4);
+        white-space: nowrap;
+      }
+    }
+  }
+
+  li {
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include before {
+      left: calc(100% + 15px);
+      top: 50%;
+      height: 100%;
+      width: 1px;
+      background-color: $colorWhite;
+      transform: rotate(25deg) translateY(calc(-50% - 2px));
+    }
+
+    &:last-child {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    transition: opacity 0.3s;
+    text-transform: uppercase;
+
+    &.active {
+      opacity: 0.4;
+
+      & + .menu-sub {
+        display: inline-flex;
+      }
+    }
+
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+
+  .lang {
+    display: none;
+    color: $colorBlack;
+
+    a {
+      &.active {
+        text-decoration-color: $colorBlack;
+      }
+    }
+  }
+}

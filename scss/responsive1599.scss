@@ -1,0 +1,85 @@
+@media (max-width: 1599px) {
+  .design-item {
+    height: 600px;
+  }
+
+  .design-item__name {
+    left: 60px;
+    bottom: 40px;
+  }
+
+  .price-block {
+    padding: 80px;
+  }
+
+  .price-block__price {
+    margin-top: 8px;
+  }
+
+  .price-block__info {
+    padding-top: 8px;
+  }
+
+  h3,
+  .caption--h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .price-block__info .btn {
+    margin-top: 8px;
+  }
+
+  .price-block__item {
+    padding: 16px;
+  }
+
+  .staging {
+    padding: 80px;
+  }
+
+  .staging__media {
+    height: 400px;
+  }
+
+  .publications-slider {
+    padding: 80px;
+  }
+
+  .brands {
+    padding: 60px 80px;
+  }
+
+  .brands__list {
+    gap: 50px 20px;
+  }
+
+  .questions-from {
+    padding: 60px 80px;
+  }
+
+  .header {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
+  .catalog {
+    padding: 60px 80px;
+  }
+
+  .contacts__info {
+    left: 80px;
+  }
+
+  .article {
+    padding: 60px 80px;
+  }
+
+  .steps {
+    padding: 60px 80px;
+  }
+
+  .step-number {
+    transform: scale(0.8) translateY(-10px) translateX(-70px);
+  }
+}
