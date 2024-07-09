@@ -276,6 +276,7 @@
   .contacts {
     flex: 1;
     display: flex;
+    flex-wrap: wrap;
 
     .map {
       height: auto;
@@ -372,7 +373,7 @@
   }
 
   .step-number {
-    transform: scale(0.5) translateY(-246px) translateX(-280px);
+    transform: scale(0.521) translateY(-246px) translateX(-280px);
   }
 
   .steps > .caption {

@@ -1,4 +1,23 @@
 @media (max-width: 767px) {
+  .title-page {
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-transform: uppercase;
+
+    .caption {
+      font-weight: 500;
+    }
+
+    & + * {
+      padding-top: 0;
+    }
+  }
+
   .grettings__content {
     gap: 20px;
   }
