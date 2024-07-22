@@ -2985,6 +2985,7 @@ h3,
     background-size: 40px;
     background-position: center calc(50% - 20px);
     padding-top: 30px;
+    opacity: 1;
   }
 }
 @media (max-width: 1023px) {
