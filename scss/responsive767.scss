@@ -271,4 +271,29 @@
   .step-number .num:nth-child(4) {
     transform: translateY(-97px) translateX(29px);
   }
+
+  .btn-swiper-prev {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+  }
+
+  .btn-swiper-next {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+  }
+
+  .main-section .video-section video {
+    width: auto;
+    height: 100%;
+  }
+
+  .project-working__text {
+    font-size: 16px;
+    line-height: 24px;
+    background-size: 30px;
+    background-position: center calc(50% - 10px);
+    padding-top: 40px;
+  }
 }

@@ -415,4 +415,17 @@
   .price-block__item > a {
     display: block;
   }
+
+  .main-section .video-section video {
+    width: auto;
+    height: 120%;
+  }
+
+  .project-working__text {
+    font-size: 20px;
+    line-height: 30px;
+    background-size: 40px;
+    background-position: center calc(50% - 20px);
+    padding-top: 30px;
+  }
 }
