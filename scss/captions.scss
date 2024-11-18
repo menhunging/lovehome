@@ -12,22 +12,58 @@ h6,
 h1,
 .caption--h1 {
   font-size: 32px;
-  line-height: 41px;
+  line-height: 42px;
+
+  @include responsive767 {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 h2,
 .caption--h2 {
   font-size: 24px;
-  line-height: 31px;
+  line-height: 28px;
+
+  @include responsive1279 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @include responsive767 {
+    font-size: 13px;
+    line-height: 24px;
+  }
 }
 
 h3,
 .caption--h3 {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 32px;
+  line-height: 36px;
+
+  @include responsive1279 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  @include responsive767 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
-.caption-h1--small {
-  font-size: 75px;
-  line-height: 80px;
+h4,
+.caption--h4 {
+  font-size: 18px;
+  line-height: 24px;
+
+  @include responsive767 {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
+
+// .caption-h1--small {
+//   font-size: 75px;
+//   line-height: 80px;
+// }

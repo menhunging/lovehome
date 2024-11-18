@@ -1,16 +1,4 @@
 @media (max-width: 1439px) {
-  .header {
-    padding: 50px 80px;
-  }
-
-  .portfolio__content {
-    padding: 20px;
-  }
-
-  .footer {
-    padding: 0 80px 50px;
-  }
-
   .project__content {
     padding: 50px 80px;
     gap: 30px;
@@ -21,7 +9,6 @@
   }
 
   .about__content {
-    padding: 50px 80px;
     gap: 30px;
   }
 
@@ -51,10 +38,6 @@
 
   .staging__media {
     height: 350px;
-  }
-
-  .publications-slider {
-    padding: 50px 80px;
   }
 
   .brands__item .picture {
@@ -93,4 +76,12 @@
     width: 150%;
     height: 116%;
   }
+
+  .about__back {
+    top: -30px;
+    height: calc(100% + 60px);
+    left: -60px;
+    width: calc(100% + 120px);
+  }
 }
+

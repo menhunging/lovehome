@@ -1,26 +1,7 @@
 @media (max-width: 639px) {
-  .portfolio__list {
-    grid-template-columns: 1fr;
-  }
-
-  .portfolio__item {
-    padding-top: calc(250 / 320 * 100%);
-  }
-
-  .portfolio__content {
-    padding: 16px;
-  }
-
-  h2,
-  .caption--h2 {
-    font-size: 14px;
-    line-height: 18px;
-  }
-
   .footer {
     font-size: 10px;
     line-height: 13px;
-    padding: 0 16px 20px;
   }
 
   .project__content {
@@ -64,7 +45,7 @@
   }
 
   .project {
-    padding-top: 20px;
+    padding-top: 10px;
   }
 
   .about__right {
@@ -75,10 +56,6 @@
     font-size: 12px;
     line-height: 16px;
     margin-top: 10px;
-  }
-
-  .about__content {
-    padding: 40px 16px;
   }
 
   .studio-page {
@@ -153,18 +130,6 @@
     padding: 10px;
   }
 
-  .contacts__info {
-    left: 16px;
-    max-width: 100%;
-    width: calc(100% - 32px);
-    transform: translateY(0);
-    top: 80px;
-  }
-
-  .contacts .map {
-    min-height: 650px;
-  }
-
   .article .picture {
     padding-top: calc(180 / 288 * 100%);
   }
@@ -183,5 +148,14 @@
   .modal .questions-from {
     padding: 16px;
     gap: 16px;
+  }
+
+  .project-working {
+    display: none;
+  }
+
+  .grettings__text {
+    font-size: 16px;
+    line-height: 20px;
   }
 }

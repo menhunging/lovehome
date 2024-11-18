@@ -1,5 +1,89 @@
 $fontMain: "Mont";
+$fontPiazzolla: "Piazzolla";
 
 $colorWhite: rgba(255, 255, 255, 1);
 $colorBlack: rgba(0, 0, 0, 1);
 $colorYellow: rgba(255, 252, 245, 1);
+
+$responsive1799: "1799px";
+$responsive1699: "1699px";
+$responsive1599: "1599px";
+$responsive1439: "1439px";
+$responsive1279: "1279px";
+$responsive1023: "1023px";
+$responsive767: "767px";
+$responsive639: "639px";
+$responsive479: "479px";
+$responsive389: "389px";
+
+@mixin boxShadowDefault {
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.16);
+}
+
+// @media responsive
+
+@mixin responsiveMinWidth768 {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin responsive1799 {
+  @media (max-width: $responsive1799) {
+    @content;
+  }
+}
+
+@mixin responsive1699 {
+  @media (max-width: $responsive1699) {
+    @content;
+  }
+}
+
+@mixin responsive1599 {
+  @media (max-width: $responsive1599) {
+    @content;
+  }
+}
+
+@mixin responsive1439 {
+  @media (max-width: $responsive1439) {
+    @content;
+  }
+}
+
+@mixin responsive1279 {
+  @media (max-width: $responsive1279) {
+    @content;
+  }
+}
+
+@mixin responsive1023 {
+  @media (max-width: $responsive1023) {
+    @content;
+  }
+}
+
+@mixin responsive767 {
+  @media (max-width: $responsive767) {
+    @content;
+  }
+}
+
+@mixin responsive639 {
+  @media (max-width: $responsive639) {
+    @content;
+  }
+}
+
+@mixin responsive479 {
+  @media (max-width: $responsive479) {
+    @content;
+  }
+}
+
+@mixin responsive389 {
+  @media (max-width: $responsive389) {
+    @content;
+  }
+}

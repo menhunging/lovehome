@@ -12,41 +12,9 @@
     width: 400px;
   }
 
-  .lang {
-    font-size: 14px;
-    line-height: 18px;
-  }
-
-  .header {
-    padding: 40px 20px;
-    gap: 20px 30px;
-  }
-
-  .menu {
-    ul {
-      gap: 15px;
-    }
-
-    li {
-      font-size: 10px;
-      line-height: 13px;
-
-      &::before {
-        left: calc(100% + 3px);
-      }
-    }
-  }
-
-  h1,
-  .caption--h1 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  h2,
-  .caption--h2 {
-    font-size: 16px;
-    line-height: 22px;
+  .grettings__text {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .portfolio__list {
@@ -56,7 +24,6 @@
   .footer {
     font-size: 12px;
     line-height: 15px;
-    padding: 0 20px 40px;
   }
 
   .project__content {
@@ -108,7 +75,6 @@
   .about__content {
     flex-direction: column;
     gap: 40px;
-    padding: 40px 20px;
   }
 
   .about__left {
@@ -153,19 +119,12 @@
   }
 
   .price-block {
-    padding: 40px 20px;
     font-size: 12px;
     line-height: 16px;
   }
 
   .price-block__item {
     height: 167px;
-  }
-
-  h3,
-  .caption--h3 {
-    font-size: 12px;
-    line-height: 16px;
   }
 
   .price-block__price {
@@ -189,10 +148,6 @@
 
   .staging__media {
     height: 220px;
-  }
-
-  .publications-slider {
-    padding: 40px 20px;
   }
 
   .publications-slider .swiper-slide {
@@ -277,19 +232,6 @@
     flex: 1;
     display: flex;
     flex-wrap: wrap;
-
-    .map {
-      height: auto;
-      flex: 1;
-      min-height: 500px;
-    }
-  }
-
-  .contacts__info {
-    left: 20px;
-    font-size: 12px;
-    line-height: 16px;
-    max-width: 320px;
   }
 
   .article {

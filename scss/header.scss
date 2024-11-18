@@ -2,16 +2,111 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px 50px;
-  padding: 50px 120px;
+  padding: 30px 120px;
   transition: opacity 0.3s;
   position: relative;
   z-index: 5;
   color: $colorWhite;
 
+  @include responsive1439 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @include responsive1279 {
+    padding: 30px 20px;
+  }
+
+  @include responsive1023 {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  @include responsive767 {
+    padding: 16px 10px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @include responsive767 {
+      width: auto;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: auto;
+
+    @include responsive1023 {
+      gap: 20px;
+    }
+
+    @include responsive767 {
+      position: absolute;
+      left: auto;
+      right: 80px;
+      top: 50%;
+      margin: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  &-link {
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    @include text-decoration-hover($colorBlack);
+
+    @include responsive1439 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @include responsive1023 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    @include responsive767 {
+      display: none;
+    }
+
+    &--phone {
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M6.51309 7.23812C7.20909 8.68774 8.15787 10.0464 9.35945 11.248C10.561 12.4495 11.9197 13.3983 13.3693 14.0943C13.494 14.1542 13.5563 14.1841 13.6352 14.2071C13.9156 14.2888 14.2598 14.2301 14.4973 14.0601C14.5641 14.0123 14.6212 13.9551 14.7355 13.8408C15.0851 13.4912 15.26 13.3164 15.4357 13.2021C16.0986 12.7711 16.9532 12.7711 17.6161 13.2021C17.7919 13.3164 17.9667 13.4912 18.3163 13.8408L18.5111 14.0357C19.0426 14.5671 19.3083 14.8329 19.4527 15.1182C19.7397 15.6858 19.7397 16.3561 19.4527 16.9236C19.3083 17.209 19.0426 17.4747 18.5111 18.0062L18.3535 18.1638C17.8239 18.6934 17.5591 18.9582 17.199 19.1605C16.7995 19.3849 16.179 19.5463 15.7208 19.5449C15.3079 19.5437 15.0257 19.4636 14.4612 19.3034C11.4278 18.4424 8.56545 16.8179 6.17747 14.4299C3.78949 12.042 2.16502 9.1796 1.30405 6.1462C1.14384 5.58175 1.06374 5.29953 1.06251 4.88658C1.06114 4.42836 1.22251 3.80787 1.44693 3.40837C1.64918 3.04833 1.91399 2.78352 2.44361 2.2539L2.60124 2.09626C3.13269 1.56482 3.39841 1.2991 3.68379 1.15476C4.25135 0.867686 4.92162 0.867686 5.48918 1.15476C5.77456 1.2991 6.04028 1.56482 6.57172 2.09626L6.76659 2.29113C7.1162 2.64074 7.291 2.81554 7.40529 2.99132C7.83628 3.65421 7.83628 4.50879 7.40528 5.17168C7.291 5.34746 7.1162 5.52226 6.76659 5.87187C6.65228 5.98618 6.59512 6.04334 6.54728 6.11015C6.37727 6.34758 6.31857 6.69184 6.40029 6.97219C6.42329 7.05108 6.45322 7.11343 6.51309 7.23812Z' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding-left: 40px;
+
+      @include responsive1023 {
+        padding-left: 25px;
+      }
+
+      @include responsive767 {
+        display: flex;
+        color: transparent;
+        width: 18px;
+        height: 18px;
+        background-position: center;
+      }
+    }
+  }
+
   .logo {
-    width: 29px;
-    height: 24px;
-    transition: all 0.3s;
+    @include responsive767 {
+      margin: 0 auto;
+    }
   }
 }
 
@@ -24,6 +119,16 @@
   display: flex;
   align-items: center;
   gap: 20px;
+
+  @include responsive1439 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @include responsive1023 {
+    font-size: 12px;
+    line-height: 16px;
+  }
 
   a {
     position: relative;
@@ -60,10 +165,32 @@
 .menu {
   width: 100%;
 
+  @include responsive767 {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    display: none;
+    background-color: $colorWhite;
+    padding: 30px 0;
+  }
+
   ul {
     display: flex;
     align-items: center;
     gap: 41px;
+
+    @include responsive1279 {
+      gap: 30px;
+    }
+
+    @include responsive1023 {
+      gap: 20px;
+    }
+
+    @include responsive767 {
+      flex-direction: column;
+    }
 
     &.menu-sub {
       display: none;
@@ -115,6 +242,32 @@
       width: 1px;
       background-color: $colorWhite;
       transform: rotate(25deg) translateY(calc(-50% - 2px));
+
+      @include responsive1279 {
+        left: calc(100% + 10px);
+      }
+
+      @include responsive1023 {
+        left: calc(100% + 6px);
+      }
+
+      @include responsive767 {
+        display: none;
+      }
+    }
+
+    @include responsive1439 {
+      font-size: 12px;
+    }
+
+    @include responsive1279 {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    @include responsive1023 {
+      font-size: 9px;
+      line-height: 12px;
     }
 
     &:last-child {
@@ -127,6 +280,10 @@
   a {
     transition: opacity 0.3s;
     text-transform: uppercase;
+
+    @include responsive767 {
+      font-size: 14px;
+    }
 
     &.active {
       opacity: 0.4;

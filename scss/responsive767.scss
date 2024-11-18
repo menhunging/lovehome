@@ -1,93 +1,18 @@
 @media (max-width: 767px) {
-  .title-page {
-    display: flex;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 18px;
-    letter-spacing: 0.1em;
-    margin-bottom: 40px;
-    margin-top: 20px;
-    text-transform: uppercase;
+  .about__content {
+    gap: 20px;
+  }
 
-    .caption {
-      font-weight: 500;
-    }
-
-    & + * {
-      padding-top: 0;
-    }
+  .about__right {
+    margin-top: 0;
   }
 
   .grettings__content {
-    gap: 20px;
+    gap: 15px;
   }
 
   .grettings__logo {
     width: calc(100% - 32px);
-  }
-
-  .lang {
-    display: none;
-  }
-
-  .menu {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: $colorYellow;
-    z-index: 10;
-
-    &__inner {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-    }
-
-    ul {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 24px;
-    }
-
-    li {
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 19px;
-      letter-spacing: 0.1em;
-      color: rgba(0, 0, 0, 1);
-      flex-direction: column;
-
-      &::before {
-        display: none;
-      }
-    }
-
-    a {
-    }
-
-    &.opened {
-    }
-
-    .lang {
-      display: flex;
-      margin-top: 60px;
-    }
-  }
-
-  .burger {
-    display: flex;
-    margin-left: auto;
-  }
-
-  .header {
-    padding: 20px 16px;
   }
 
   .btn-close {
@@ -200,6 +125,10 @@
     gap: 16px;
   }
 
+  .project {
+    padding-top: 10px;
+  }
+
   .project-navigate.navigate--article {
     span {
       display: none;
@@ -295,5 +224,10 @@
     background-size: 30px;
     background-position: center calc(50% - 10px);
     padding-top: 40px;
+  }
+
+  .publications-slider__swiper {
+    padding-top: 20px;
+    margin-top: 20px;
   }
 }

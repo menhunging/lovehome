@@ -212,9 +212,154 @@ $(document).ready(function () {
   if ($(".map").length > 0) {
     // initMap();
   }
+
+  if ($(".portfolio__list").length > 0) {
+    handleResizePortfolio();
+  }
+
+  if ($(".services-about__slider").length > 0) {
+    const swiperServiceAbout = new Swiper(".services-about__slider", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      autoHeight: true,
+      watchSlidesProgress: true,
+      navigation: {
+        prevEl: ".btn-prev",
+        nextEl: ".btn-next",
+      },
+      on: {
+        slideChange: function () {
+          $(".services-about__item").removeClass("active");
+          $(".services-about__item").eq(this.activeIndex).addClass("active");
+        },
+      },
+    });
+
+    $(".services-about__item").on("click", function () {
+      if (!$(this).hasClass("active")) {
+        let index = $(this).index();
+        $(".services-about__item").removeClass("active");
+        $(this).addClass("active");
+        swiperServiceAbout.slideTo(index);
+      }
+    });
+  }
+
+  if ($(".price-block__slider").length > 0) {
+    let swiperPriceBlock;
+    let destroy = () => {};
+
+    if ($(window).width() < 767) {
+      initPricesSlider();
+    }
+
+    $(window).on("resize", function () {
+      if ($(window).width() < 767) {
+        initPricesSlider();
+      } else {
+        destroy();
+      }
+    });
+
+    function initPricesSlider() {
+      if (!$(".price-block__slider").hasClass("init")) {
+        $(".price-block__slider").addClass("init");
+
+        swiperPriceBlock = new Swiper(".price-block__slider", {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          watchSlidesProgress: true,
+          navigation: {
+            // prevEl: ".price-block .btn-prev",
+            nextEl: ".price-block .btn-next",
+          },
+          breakpoints: {
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            480: {
+              slidesPerView: 1.5,
+              spaceBetween: 20,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+          },
+        });
+
+        destroy = () => {
+          swiperPriceBlock.destroy(true, true);
+          $(".price-block__slider").removeClass("init");
+        };
+      }
+    }
+  }
+
+  if ($(".art-slider__slider").length > 0) {
+    const swiper = new Swiper(".art-slider__slider", {
+      slidesPerView: 3,
+      spaceBetween: 45,
+      autoHeight: true,
+      watchSlidesProgress: true,
+      navigation: {
+        prevEl: ".btn-prev",
+        nextEl: ".btn-next",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2.5,
+          spaceBetween: 24,
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 45,
+        },
+      },
+    });
+  }
+
+  if ($(".design-slider__slider").length > 0) {
+    const swiper = new Swiper(".design-slider__slider", {
+      slidesPerView: 2.5,
+      spaceBetween: 40,
+      watchSlidesProgress: true,
+      navigation: {
+        // prevEl: ".btn-prev",
+        nextEl: ".design-slider__right .btn-next",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2.2,
+          spaceBetween: 22,
+        },
+        1024: {
+          slidesPerView: 2.25,
+          spaceBetween: 22,
+        },
+        1280: {
+          slidesPerView: 2.5,
+          spaceBetween: 40,
+        },
+      },
+    });
+  }
 });
 
-$(window).on("resize", function () {});
+$(window).on("resize", function () {
+  if ($(".portfolio__list").length > 0) {
+    handleResizePortfolio();
+  }
+});
 
 // yandex map
 
@@ -260,3 +405,61 @@ async function initMap() {
 }
 
 // /yandex map
+
+function handleResizePortfolio() {
+  let list = $(".portfolio__list");
+  let itemCount = $(".portfolio__item:not('.project-working')").length;
+  const html = `<div class="portfolio__item project-working">
+                        <picture class="picture">
+                            <source type="image/webp" srcset="../../img/portfolio3.webp" />
+                            <img src="../../img/portfolio3.jpg" alt="" />
+                        </picture>
+                        <span class="project-working__text">Проект в разработке</span>
+                    </div>`;
+
+  if ($(window).width() > 1024) {
+    if (!$(".portfolio__list").hasClass("init")) {
+      $(".portfolio__list").addClass("init");
+
+      $(".project-working").remove();
+
+      switch (itemCount % 3) {
+        case 2:
+          list.append(html);
+          break;
+
+        case 1 || 3: {
+          list.append(html);
+          list.append(html);
+          break;
+        }
+
+        case 0: {
+          break;
+        }
+      }
+    }
+  } else {
+    $(".portfolio__list").removeClass("init");
+  }
+
+  if ($(window).width() < 1023 && $(window).width() > 640) {
+    if (!$(".portfolio__list").hasClass("initTablet")) {
+      $(".portfolio__list").addClass("initTablet");
+
+      $(".project-working").remove();
+
+      switch (itemCount % 2) {
+        case 1:
+          list.append(html);
+          break;
+
+        case 0: {
+          break;
+        }
+      }
+    }
+  } else {
+    $(".portfolio__list").removeClass("initTablet");
+  }
+}

@@ -12,68 +12,18 @@
     width: 600px;
   }
 
-  .header {
-    padding: 50px 60px;
-    gap: 30px;
-  }
-
-  .lang {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .menu {
-    ul {
-      gap: 28px;
-    }
-
-    li {
-      font-size: 12px;
-      line-height: 15px;
-
-      &::before {
-        left: calc(100% + 10px);
-      }
-    }
-  }
-
-  h1,
-  .caption--h1 {
-    font-size: 24px;
-    line-height: 31px;
-  }
-
-  h2,
-  .caption--h2 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .portfolio {
-    padding: 40px 0;
-  }
-
-  .portfolio__content {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .portfolio__item::before {
-    opacity: 1;
-  }
-
-  .portfolio__item {
-    padding-top: calc(250 / 342 * 100%);
+  .grettings__text {
+    font-size: 32px;
+    line-height: 40px;
   }
 
   .footer {
     font-size: 12px;
     line-height: 15px;
-    padding: 0 60px 50px;
   }
 
   .project {
-    padding-top: 40px;
+    padding-top: 0;
   }
 
   .project__content {
@@ -104,7 +54,6 @@
   }
 
   .about__content {
-    padding: 40px 60px;
     gap: 40px;
   }
 
@@ -196,12 +145,6 @@
     display: none;
   }
 
-  h3,
-  .caption--h3 {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
   .price-block__price {
     font-size: 14px;
     line-height: 20px;
@@ -209,7 +152,6 @@
   }
 
   .staging {
-    padding: 60px;
     font-size: 14px;
     line-height: 20px;
 
@@ -226,12 +168,9 @@
     height: 270px;
   }
 
-  .publications-slider {
-    padding: 60px;
-  }
-
   .publications-slider__swiper {
-    margin-top: 20px;
+    margin-top: 0;
+    padding-top: 80px;
   }
 
   .publications-slider .swiper-slide {
@@ -317,22 +256,6 @@
   .catalog-item__price {
     font-size: 16px;
     line-height: 22px;
-  }
-
-  .map {
-    height: 490px;
-  }
-
-  .contacts__info {
-    left: 60px;
-    font-size: 14px;
-    line-height: 20px;
-    padding: 16px;
-    max-width: 432px;
-  }
-
-  .contacts__info ul li + li {
-    margin-top: 17px;
   }
 
   .contacts__title {
@@ -422,11 +345,14 @@
   }
 
   .project-working__text {
-    font-size: 20px;
-    line-height: 30px;
     background-size: 40px;
     background-position: center calc(50% - 20px);
     padding-top: 30px;
     opacity: 1;
+  }
+
+  .about__back {
+    top: -20px;
+    height: calc(100% + 40px);
   }
 }

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
+    <title>О нас</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../../img/favicon/safari-pinned-tab.svg" color="#030e2c">
+    <meta name="msapplication-TileColor" content="#030e2c">
+    <meta name="theme-color" content="#030e2c">
+
+    <link rel="stylesheet" type="text/css" href="../../fonts/stylesheet.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../libs/selectric/selectric.css" />
+    <link rel="stylesheet" type="text/css" href="../../libs/micromodal/micromodal.css" />
+    <link rel="stylesheet" type="text/css" href="../../libs/fancybox/fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="../../libs/aos/aos.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+</head>
+
+<body class="inner-page">
+    <div class="site-wrapper">
+        <header class="header">
+            <picture class="logo">
+                <a href="/pages/index/index.html"></a>
+                <svg width="51" height="43" viewBox="0 0 51 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M21.6688 17.12C21.6688 16.8471 21.8904 16.6259 22.1638 16.6259H25.1338C25.4072 16.6259 25.6288 16.8471 25.6288 17.12V20.0847C25.6288 20.3576 25.4072 20.5789 25.1338 20.5789H22.1638C21.8904 20.5789 21.6688 20.3576 21.6688 20.0847V17.12ZM22.6588 19.5906V17.6141H24.6388V19.5906H22.6588Z"
+                        fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M26.1238 17.12C26.1238 16.8471 26.3454 16.6259 26.6188 16.6259H29.5888C29.8621 16.6259 30.0838 16.8471 30.0838 17.12V20.0847C30.0838 20.3576 29.8621 20.5789 29.5888 20.5789H26.6188C26.3454 20.5789 26.1238 20.3576 26.1238 20.0847V17.12ZM27.1138 19.5906V17.6141H29.0938V19.5906H27.1138Z"
+                        fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M22.1638 21.073C21.8904 21.073 21.6688 21.2942 21.6688 21.5671V24.5318C21.6688 24.8047 21.8904 25.0259 22.1638 25.0259H25.1338C25.4072 25.0259 25.6288 24.8047 25.6288 24.5318V21.5671C25.6288 21.2942 25.4072 21.073 25.1338 21.073H22.1638ZM22.6588 22.0612V24.0377H24.6388V22.0612H22.6588Z"
+                        fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M26.1238 21.5671C26.1238 21.2942 26.3454 21.073 26.6188 21.073H29.5888C29.8621 21.073 30.0838 21.2942 30.0838 21.5671V24.5318C30.0838 24.8047 29.8621 25.0259 29.5888 25.0259H26.6188C26.3454 25.0259 26.1238 24.8047 26.1238 24.5318V21.5671ZM27.1138 24.0377V22.0612H29.0938V24.0377H27.1138Z"
+                        fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M5.28342 24.6284C-0.370501 19.566 -0.82535 10.9025 4.26749 5.27785C9.36033 -0.346775 18.0723 -0.802533 23.7262 4.25988L25.7488 6.07084L27.5051 4.49826C33.0906 -0.502924 41.6972 -0.052669 46.7285 5.50392C51.7597 11.0605 51.3104 19.6193 45.7248 24.6205L25.4857 42.7422L25.3663 42.6103L5.28342 24.6284ZM25.4997 39.4108L44.0722 22.7813C48.6375 18.6937 49.0045 11.7022 44.8923 7.16055C40.7752 2.61351 33.7284 2.24486 29.1577 6.3374L27.3216 7.98138C27.4391 8.05965 27.5515 8.14901 27.6571 8.24948L35.9091 16.0982C36.3993 16.5645 36.6768 17.2109 36.6768 17.8869V27.1112C36.6768 28.4757 35.5687 29.5818 34.2018 29.5818H17.6978C16.3309 29.5818 15.2228 28.4757 15.2228 27.1112V17.8869C15.2228 17.2109 15.5002 16.5645 15.9905 16.0982L24.2425 8.24948C24.2805 8.21333 24.3194 8.17862 24.359 8.14534L22.0736 6.09902C17.4345 1.94525 10.2824 2.31941 6.10362 6.93448C1.92981 11.5441 2.30237 18.6404 6.93602 22.7893L25.4997 39.4108ZM34.2018 17.8869V27.1112H17.6978L17.6978 17.8869L25.9498 10.0381L34.2018 17.8869Z"
+                        fill="black" />
+                </svg>
+                <span class="logo__text">lovehome Interior design</span>
+            </picture>
+
+            <div class="header__controls">
+                <a href="#" class="header-link">интерьер с историей</a>
+
+                <a href="tel:+79689611316" class="header-link header-link--phone">+7 (968) 961-13-16</a>
+            </div>
+
+            <div class="header__bottom">
+                <nav class="menu">
+                    <div class="menu__inner">
+                        <!-- <button class="btn-close"></button> -->
+                        <ul>
+                            <li><a href="../portfolio/portfolio.html">о нас</a></li>
+                            <li><a href="../portfolio/portfolio.html">услуги</a></li>
+                            <li><a href="../portfolio/portfolio.html">арт консалтинг</a></li>
+                            <li><a href="../portfolio/portfolio.html">психология дизайна</a></li>
+                            <li><a href="../portfolio/portfolio.html">комплектация интерьеров</a></li>
+
+                            <li><a href="../portfolio/portfolio.html">Портфолио</a></li>
+
+                            <!-- <li>
+                                <a href="../studio/studio.html">Студия</a>
+                                <ul class="menu-sub">
+                                    <li><a href="#">Публикации</a></li>
+                                    <li><a href="#">Дизайн Интерьера</a></li>
+                                    <li><a href="#">Цены</a></li>
+                                    <li><a href="#">home staging</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/pages/brands/brands.html">Бренды</a></li>
+                            <li><a href="/pages/catalog/catalog.html">Наличие</a></li>
+                            <li><a href="/pages/contacts/contacts.html">Контакты</a></li> -->
+                        </ul>
+                        <div class="lang">
+                            <a href="#" class="active">Ru</a>
+                            <a href="#">En</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="lang">
+                    <a href="#" class="active">Ru</a>
+                    <a href="#">En</a>
+                </div>
+
+            </div>
+
+            <button class="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+        </header>
+        <main class="main">
+            <section class="about-lider">
+                <div class="about-lider__content">
+                    <div class="site-media">
+                        <picture>
+                            <source type="image/webp" srcset="./../../img/pic-leader.webp" />
+                            <img src="./../../img/pic-leader.jpg" alt="">
+                        </picture>
+                    </div>
+
+                    <div class="about-lider__text">
+                        <span class="about-lider__title">lovehome Interior design</span>
+                        <span class="about-lider__name">Ирина Привалова - основатель студии дизайна LOVE HOME
+                            INTERIOR</span>
+                        <span class="about-lider__desc">Дизайнер, декоратор, арт-консультант, собиратель
+                            коллекционного дизайна и
+                            коллекционер предметов искусства, бизнес-психолог (психология дизайна, личности и
+                            организации среды), инвестор</span>
+                        <p>Двадцать лет я создаю интерьеры мечты с любовью, вкусом и вниманием к историческим стилям
+                            в современном прочтении, при этом не теряя нити эксклюзивности и индивидуальности
+                            предпочтений семьи. Всегда в оформлении дома помогаю окружить себя значимыми вещами и
+                            предметами в контексте вашей истории. Дом должен быть наполнен счастьем, любовью и
+                            умиротворением - это главная задача и цель построения интерьера. Моя миссия соединить
+                            прошлое и настоящее, предков и потомков в одно целое -семейные традиции и ценности, в
+                            этом и есть эксклюзивность и индивидуальность .</p>
+                        <p>Без прошлого нет будущего, поэтому все исторические аспекты учитываются в декорировании
+                            интерьера предметы современного искусства, антиквариат и коллекционный дизайн, а так же
+                            современные стилистические тенденции, то что дает уют и тепло. Эти воспоминания и
+                            способность взглянуть на историзм по -новому несут положительное восприятие сегодня
+                            ,здесь и сейчас в вашем доме. Мы создаем пространство, которое станет домом для всей
+                            вашей семьи и расскажет вашу историю. Для меня дом в котором живет мир и любовь-лучшее
+                            место на земле.</p>
+
+                        <div class="dop-image site-media">
+                            <picture>
+                                <source type="image/webp" srcset="./../../img/pic-dop.webp" />
+                                <img src="./../../img/pic-dop.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="about__content">
+                    <h1 class="caption">Студия LOVEHOME</h1>
+
+                    <div class="about__left">
+                        <h2 class="caption">О нас</h2>
+                        <p>
+                            В январе 2020 года на Парижской выставке MAISON&OBJET мы познакомились с Розитой
+                            Джельмини —
+                            основательницей фэшн-бренда Missoni. Буквально зарядившись ее жизненной энергией,
+                            творческим
+                            подходом к работе и чувством прекрасного, мы решили открыть в Москве бутик Missoni Home.
+                        </p>
+                        <p>
+                            Как известно, аппетит приходит во время еды, особенно если дело касается Италии: спустя
+                            время мы расширили наш список итальянских брендов — теперь их 24. Так родилась компания
+                            Lovehome. Помимо развития бутика с текстилем и декором, мы стали работать с дизайнерами
+                            интерьера, архитекторами и декораторами. Вместе мы создаем индивидуальные проекты для
+                            домов
+                            и квартир, где будут жить любовь (в том числе к тканям, фактурам) и понимание стиля
+                            высшего
+                            класса.
+                        </p>
+                    </div>
+                    <div class="about__right">
+                        <picture class="picture">
+                            <source type="image/webp" srcset="../../img/pic-about.webp" />
+                            <img src="../../img/pic-about.jpg" alt="" />
+                        </picture>
+
+                        <span class="title">Компания Lovehome</span>
+                    </div>
+
+                    <picture class="picture about__back">
+                        <source type="image/webp" srcset="../../img/pic-about.webp" />
+                        <img src="../../img/pic-about.jpg" alt="" />
+                    </picture>
+                </div>
+            </section>
+
+            <section class="publications-slider" id="publications">
+
+                <div class="section-title">
+                    <h3 class="caption">Дизайн интерьера</h3>
+
+                    <p>
+                        Очень важно подобрать качественную мебель для создания уюта и комфорта. Мы профессионально
+                        подходим
+                        к выбору мебели при разработке дизайна, учитываем ваши пожелания и бюджет. Мы расскажем
+                        подробнее о
+                        том, как работаем при разработке дизайна интерьера.
+                    </p>
+                </div>
+
+                <div class="publications-slider__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture class="picture">
+                                <source type="image/webp" srcset="../../img/pic-public1.webp" />
+                                <img src="../../img/pic-public1.jpg" alt="" />
+                            </picture>
+                            <h4 class="caption">Уютная сказка</h4>
+                            <p>
+                                Уютные интерьеры, нарядные столовые, желанные подарки. Уютные интерьеры, нарядные
+                                столовые, желанные подарки...
+                            </p>
+                            <a href="#" class="link-site">Читать статью</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="picture">
+                                <source type="image/webp" srcset="../../img/pic-public2.webp" />
+                                <img src="../../img/pic-public2.jpg" alt="" />
+                            </picture>
+                            <h4 class="caption">Уютная сказка</h4>
+                            <p>
+                                Яркий текстиль и предметы интерьера от Кензо Такады и Missoni Home. Яркий текстиль и
+                                предметы интерьера от Кензо Такады и Missoni Home.
+                            </p>
+                            <a href="#" class="link-site">Читать статью</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="picture">
+                                <source type="image/webp" srcset="../../img/pic-public3.webp" />
+                                <img src="../../img/pic-public3.jpg" alt="" />
+                            </picture>
+                            <h4 class="caption">Уютная сказка</h4>
+                            <p>
+                                Квартира с мансардой в Воронеже. Квартира с мансардой в Воронеже. Квартира с
+                                мансардой в Воронеже...
+                            </p>
+                            <a href="#" class="link-site">Читать статью</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="picture">
+                                <source type="image/webp" srcset="../../img/pic-studio1.webp" />
+                                <img src="../../img/pic-studio1.jpg" alt="" />
+                            </picture>
+                            <h4 class="caption">Уютная сказка</h4>
+                            <p>
+                                Уютные интерьеры, нарядные столовые, желанные подарки. Уютные интерьеры, нарядные
+                                столовые, желанные подарки...
+                            </p>
+                            <a href="#" class="link-site">Читать статью</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-controls">
+                    <a href="#" class="btn btn--dark">Смотреть все статьи</a>
+                </div>
+
+            </section>
+
+            <section class="design" id="design">
+                <div class="design-item active">
+                    <picture class="picture">
+                        <source type="image/webp" srcset="../../img/pic-studio1.webp" />
+                        <img src="../../img/pic-studio1.jpg" alt="" />
+                    </picture>
+                    <span class="design-item__name">1 - Гостиная</span>
+                    <span class="design-item__vertical">Гостиная</span>
+                </div>
+                <div class="design-item">
+                    <picture class="picture">
+                        <source type="image/webp" srcset="../../img/pic-studio2.webp" />
+                        <img src="../../img/pic-studio2.jpg" alt="" />
+                    </picture>
+                    <span class="design-item__name">2 - Спальня</span>
+                    <span class="design-item__vertical">Спальня</span>
+                </div>
+                <div class="design-item">
+                    <picture class="picture">
+                        <source type="image/webp" srcset="../../img/pic-studio1.webp" />
+                        <img src="../../img/pic-studio1.jpg" alt="" />
+                    </picture>
+                    <span class="design-item__name">3 - Детская</span>
+                    <span class="design-item__vertical">Детская</span>
+                </div>
+                <div class="design-item">
+                    <picture class="picture">
+                        <source type="image/webp" srcset="../../img/pic-studio2.webp" />
+                        <img src="../../img/pic-studio2.jpg" alt="" />
+                    </picture>
+                    <span class="design-item__name">4 - Кухня</span>
+                    <span class="design-item__vertical">Кухня</span>
+                </div>
+                <div class="design-item">
+                    <picture class="picture">
+                        <source type="image/webp" srcset="../../img/pic-studio1.webp" />
+                        <img src="../../img/pic-studio1.jpg" alt="" />
+                    </picture>
+                    <span class="design-item__name">5 - Ванная</span>
+                    <span class="design-item__vertical">Ванная</span>
+                </div>
+            </section>
+
+            <section class="text-block">
+                <div class="container">
+                    <div class="text-block__inner">
+                        <div class="text-block__left">
+                            <p>
+                                В наших проектах используем только высококачественную мебель от итальянских
+                                производителей.
+                                Итальянские мебельные фабрики славятся своим мастерством и вниманием к деталям, что
+                                позволяет
+                                нам предлагать нашим клиентам только лучшее.
+                            </p>
+
+                            <p>
+                                Мы являемся надежным поставщиком, что обеспечивает нам доступ к самым последним
+                                коллекциям и
+                                уникальным предметам интерьера.
+                            </p>
+                        </div>
+                        <div class="text-block__right" style="background-image: url('./../../img/pic-text1.webp');">
+                            <div class="site-media site-media--one">
+                                <picture>
+                                    <source type="image/webp" srcset="../../img/pic-text1.webp" />
+                                    <img src="../../img/pic-text1.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="site-media site-media--two">
+                                <picture>
+                                    <source type="image/webp" srcset="../../img/pic-text2.webp" />
+                                    <img src="../../img/pic-text2.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="questions-from">
+                <div class="questions-from__left">
+                    <h2 class="caption">Остались вопросы?</h2>
+                    <span class="questions-from__text">Оставьте заявку и наши менеджеры свяжутся с вами</span>
+                </div>
+
+                <form action="" class="questions-from__form">
+                    <div class="input-item">
+                        <input type="text" placeholder="Имя">
+                        <span class="error-text">Необходимо заполнить</span>
+                    </div>
+                    <div class="input-item error">
+                        <input type="text" placeholder="Телефон" class="phone-input">
+                        <span class="error-text">Необходимо заполнить</span>
+                    </div>
+                    <div class="input-item">
+                        <input type="email" placeholder="E-mail">
+                        <span class="error-text">Необходимо заполнить</span>
+                    </div>
+                    <button class="btn btn--white">Отправить заявку</button>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-top">
+
+                <picture class="logo">
+                    <a href="/pages/index/index.html"></a>
+                    <svg width="51" height="43" viewBox="0 0 51 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M21.6688 17.12C21.6688 16.8471 21.8904 16.6259 22.1638 16.6259H25.1338C25.4072 16.6259 25.6288 16.8471 25.6288 17.12V20.0847C25.6288 20.3576 25.4072 20.5789 25.1338 20.5789H22.1638C21.8904 20.5789 21.6688 20.3576 21.6688 20.0847V17.12ZM22.6588 19.5906V17.6141H24.6388V19.5906H22.6588Z"
+                            fill="black"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M26.1238 17.12C26.1238 16.8471 26.3454 16.6259 26.6188 16.6259H29.5888C29.8621 16.6259 30.0838 16.8471 30.0838 17.12V20.0847C30.0838 20.3576 29.8621 20.5789 29.5888 20.5789H26.6188C26.3454 20.5789 26.1238 20.3576 26.1238 20.0847V17.12ZM27.1138 19.5906V17.6141H29.0938V19.5906H27.1138Z"
+                            fill="black"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M22.1638 21.073C21.8904 21.073 21.6688 21.2942 21.6688 21.5671V24.5318C21.6688 24.8047 21.8904 25.0259 22.1638 25.0259H25.1338C25.4072 25.0259 25.6288 24.8047 25.6288 24.5318V21.5671C25.6288 21.2942 25.4072 21.073 25.1338 21.073H22.1638ZM22.6588 22.0612V24.0377H24.6388V22.0612H22.6588Z"
+                            fill="black"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M26.1238 21.5671C26.1238 21.2942 26.3454 21.073 26.6188 21.073H29.5888C29.8621 21.073 30.0838 21.2942 30.0838 21.5671V24.5318C30.0838 24.8047 29.8621 25.0259 29.5888 25.0259H26.6188C26.3454 25.0259 26.1238 24.8047 26.1238 24.5318V21.5671ZM27.1138 24.0377V22.0612H29.0938V24.0377H27.1138Z"
+                            fill="black"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5.28342 24.6284C-0.370501 19.566 -0.82535 10.9025 4.26749 5.27785C9.36033 -0.346775 18.0723 -0.802533 23.7262 4.25988L25.7488 6.07084L27.5051 4.49826C33.0906 -0.502924 41.6972 -0.052669 46.7285 5.50392C51.7597 11.0605 51.3104 19.6193 45.7248 24.6205L25.4857 42.7422L25.3663 42.6103L5.28342 24.6284ZM25.4997 39.4108L44.0722 22.7813C48.6375 18.6937 49.0045 11.7022 44.8923 7.16055C40.7752 2.61351 33.7284 2.24486 29.1577 6.3374L27.3216 7.98138C27.4391 8.05965 27.5515 8.14901 27.6571 8.24948L35.9091 16.0982C36.3993 16.5645 36.6768 17.2109 36.6768 17.8869V27.1112C36.6768 28.4757 35.5687 29.5818 34.2018 29.5818H17.6978C16.3309 29.5818 15.2228 28.4757 15.2228 27.1112V17.8869C15.2228 17.2109 15.5002 16.5645 15.9905 16.0982L24.2425 8.24948C24.2805 8.21333 24.3194 8.17862 24.359 8.14534L22.0736 6.09902C17.4345 1.94525 10.2824 2.31941 6.10362 6.93448C1.92981 11.5441 2.30237 18.6404 6.93602 22.7893L25.4997 39.4108ZM34.2018 17.8869V27.1112H17.6978L17.6978 17.8869L25.9498 10.0381L34.2018 17.8869Z"
+                            fill="black"></path>
+                    </svg>
+                    <span class="logo__text">lovehome Interior design</span>
+                </picture>
+
+                <ul>
+                    <li><a href="#">о нас</a> </li>
+                    <li><a href="#">арт консалтинг</a> </li>
+                    <li><a href="#">услуги</a> </li>
+                    <li><a href="#">homestaging</a> </li>
+                    <li><a href="#">арт консалтинг</a> </li>
+                    <li><a href="#">комплектация интерьеров</a> </li>
+                    <li><a href="#">портфолио</a> </li>
+                </ul>
+            </div>
+
+            <div class="footer-bottom">
+                <a href="#" class="footer-bottom__link">Политика конфиденциальности</a>
+                <div class="developer">
+                    Разработка сайта - <a href="https://fouro.ru/" target="_blank">FOURO</a>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+<script src="../../libs/jquery/jquery-3.7.1.min.js"></script>
+<script src="../../libs/swiper/swiper-bundle.min.js"></script>
+<script src="../../libs/selectric/jquery.selectric.min.js"></script>
+<script src="../../libs/micromodal/micromodal.min.js"></script>
+<script src="../../libs/tabslet/jquery.tabslet.min.js"></script>
+<script src="../../libs/fancybox/fancybox.umd.js"></script>
+<script src="../../libs/inputmask/jquery.inputmask.min.js"></script>
+<script src="../../libs/aos/aos.js"></script>
+<script src="../../js/main.js"></script>
+
+</html>

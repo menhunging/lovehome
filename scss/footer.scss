@@ -1,27 +1,145 @@
 .footer {
   background-color: $colorYellow;
-  padding: 0 120px 60px;
   position: relative;
   font-size: 14px;
   font-weight: 300;
   line-height: 18px;
   letter-spacing: 0.1em;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
+  box-shadow: 0px 0px 14px 0px rgba(114, 113, 113, 0.33);
+}
+
+.footer-top {
+  width: 100%;
+  padding: 65px 120px;
+  display: flex;
+  gap: 150px;
+
+  @include responsive1599 {
+    padding: 60px 80px;
+  }
+
+  @include responsive1439 {
+    padding: 60px;
+  }
+
+  @include responsive1023 {
+    padding: 60px 20px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  @include responsive767 {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 0;
+    width: 100%;
+    max-width: 610px;
+
+    @include responsive1279 {
+      max-width: 500px;
+    }
+
+    @include responsive1023 {
+      max-width: 390px;
+    }
+
+    @include responsive767 {
+      max-width: 100%;
+    }
+
+    li {
+      width: calc(50% - 15px);
+
+      @include responsive1023 {
+        width: 50%;
+      }
+    }
+
+    a {
+      color: $colorBlack;
+      text-transform: uppercase;
+      @include text-decoration-hover($colorBlack);
+      white-space: nowrap;
+
+      @include responsive479 {
+        white-space: normal;
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  padding: 25px 120px 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid 1px rgba(114, 113, 113, 1);
+
+  @include responsive1599 {
+    padding: 25px 80px;
+  }
+
+  @include responsive1439 {
+    padding: 25px 60px;
+  }
+
+  @include responsive1023 {
+    padding: 20px 10px;
+  }
+
+  @include responsive479 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  &__link {
+    color: rgba(114, 113, 113, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    @include text-decoration-hover(rgba(114, 113, 113, 1));
+
+    @include responsive1279 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    @include responsive767 {
+      font-size: 10px;
+      line-height: 13px;
+    }
+  }
 }
 
 .developer {
-  margin-left: auto;
   display: inline-block;
   text-transform: uppercase;
+  font-weight: 600;
 
   a {
     text-decoration: underline;
     text-decoration-color: transparent;
     transition: text-decoration 0.3s;
+    font-weight: 400;
 
     &:hover {
       text-decoration-color: $colorBlack;
     }
+  }
+
+  @include responsive1279 {
+    font-size: 8px;
+    line-height: 10px;
   }
 }
